@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>福井高専ニュース</title>
+<style>
+  body {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  table {
+    border-collapse: collapse;
+    background-color: white;
+  }
+  h1 {
+    font-size: min(7.8vw, 30px);
+  }
+  td, th {
+    border: 1px solid gray;
+    word-break: break-all;
+    font-size: 80%;
+    padding: 0 .4em;
+  }
+  td:first-child {
+    text-align: right;
+    word-break: normal;
+  }
+  td:nth-child(3), td:nth-child(4) {
+    x-text-align: right;
+    white-space: nowrap;
+  }
+  input {
+    font-size: 20px;
+    margin-bottom: 1em;
+  }
+  </style>
+</head><body>
+
+<h1>福井高専ニュース</h1>
+
+<script type="module" src="https://code4fukui.github.io/csv-viewer/csv-viewer.js"></script>
+<csv-viewer src="./fnct-news.csv" reverse=true></csv-viewer>
+<hr>
+DATA: <a href=https://www.fukui-nct.ac.jp/>福井高専</a> → <a href=./fnct-news.csv>CSV</a> 加工 by <a href=https://code4fukui.github.io/>Code for FUKUI</a><br>
+App: CC BY <a href=https://fukuno.jig.jp/3333>福野泰介</a><br>
+<a href=https://github.com/code4fukui/fnct-news/>src on GitHub</a>
+</body></html>
