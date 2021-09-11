@@ -1,8 +1,7 @@
-import { CSV } from "https://js.sabae.cc/CSV.js";
 import { HTMLParser } from "https://js.sabae.cc/HTMLParser.js";
+import { CSV } from "https://js.sabae.cc/CSV.js";
 
-//const url = "https://www.fukui-nct.ac.jp/news/";
-const url = "https://www.fukui-nct.ac.jp/news/page/8/";
+const url = "https://www.fukui-nct.ac.jp/news/";
 const html = await (await fetch(url)).text();
 const dom = HTMLParser.parse(html);
 const lis = dom.querySelectorAll(".news-list li");
