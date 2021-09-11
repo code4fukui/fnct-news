@@ -5,7 +5,7 @@ import { sleep } from "https://js.sabae.cc/sleep.js";
 const all = await (async () => {
   try {
     return CSV.toJSON(await CSV.fetch("fnct-news.csv"));
-  } catch (e) {
+  } catch (_) {
     console.log("not found file");
     return [];
   }
