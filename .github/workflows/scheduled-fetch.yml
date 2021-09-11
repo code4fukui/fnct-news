@@ -2,8 +2,8 @@ name: Scheduled fetch
 
 on:
   schedule:
-    # 毎事55分に実行 (UTC)
-    - cron: '57 * * * *'
+    # 毎事44分に実行 (UTC)
+    - cron: '44 * * * *'
 
 jobs:
   build:
