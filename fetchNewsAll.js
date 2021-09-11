@@ -13,8 +13,10 @@ const all = await (async () => {
 
 const add = (data) => {
   let nadd = 0;
-  data.forEach(d => {
-    const chk = all.find(a => a.url == d.url && a.title == d.title && a.date == d.date);
+  data.forEach((d) => {
+    const chk = all.find((a) =>
+      a.url == d.url && a.title == d.title && a.date == d.date
+    );
     if (!chk) {
       all.push(d);
       nadd++;
@@ -26,7 +28,9 @@ const nadd = add(await fetchNews("https://www.fukui-nct.ac.jp/news/"));
 if (nadd) {
   for (let i = 2;; i++) {
     console.log(i);
-    const res = await fetchNews("https://www.fukui-nct.ac.jp/news/page/" + i + "/");
+    const res = await fetchNews(
+      "https://www.fukui-nct.ac.jp/news/page/" + i + "/",
+    );
     if (res.length == 0) {
       break;
     }
