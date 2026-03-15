@@ -1,10 +1,8 @@
 # fnct-news
 
-This project scrapes news from the [Fukui National College of Technology](https://www.fukui-nct.ac.jp/) website and publishes the data as an open CSV dataset.
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-## Demo
-- https://code4fukui.github.io/fnct-news/
-- https://code4fukui.github.io/fnct-news/fnct-news.csv
+This project scrapes news from the [Fukui National College of Technology](https://www.fukui-nct.ac.jp/) website and publishes the data as an open CSV dataset.
 
 ## Features
 - Fetches news data from the Fukui National College of Technology website
