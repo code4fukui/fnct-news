@@ -19,4 +19,4 @@ The CSV dataset is available at the demo links above. The fetching scripts can b
 The project scrapes news data from the [Fukui National College of Technology news website](https://www.fukui-nct.ac.jp/news/).
 
 ## License
-This project is licensed under the MIT License.
+MIT License — see [LICENSE](LICENSE).
